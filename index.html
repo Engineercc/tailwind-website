@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="theme-mode-btn.css">
+  <title>Fylo Website</title>
+</head>
+
+<body class="dark:bg-darkBlue dark:text-white font-opensans">
+  <!--Header-->
+  <header class="header container mx-auto mt-10 px-6 text-center h-40 md:h-20">
+    <div
+      class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10">
+    </div>
+    <div class="flex items-center justify-center space-x-3 md:space-x-10 md:absolute top-12 right-10">
+      <a href="/" class="hover:text-accentCyan duration-500">Home</a>
+      <a href="#features" class="hover:text-accentCyan duration-500">Features</a>
+      <a href="#testimonials" class="hover:text-accentCyan duration-500">Testimonials</a>
+      <a href="#Pricing" class="hover:text-accentCyan duration-500">Pricing</a>
+      <a href="#contact" class="hover:text-accentCyan duration-500">Contact</a>
+      <!--Dark-Light Mode Button-->
+      <label class="dark-mode-checkbox"><input type="checkbox" id="theme-toggle"><span
+          class="theme-changer"></span></label>
+    </div>
+    <div class="md:hidden">
+      <button class="z-40 block hamburger md:hidden focus-outline-none" id="menu-btn" type="button">
+        <span class="hambumger-top"></span>
+        <span class="hambumger-middle"></span>
+        <span class="hambumger-bottom"></span>
+      </button>
+    </div>
+  </header>
+  <div id="menu"
+    class="absolute top-0 bottom-0 left-0 flex flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+    <a href="/" class="hover:text-accentCyan duration-500">Home</a>
+    <a href="#features" class="hover:text-accentCyan duration-500">Features</a>
+    <a href="#testimonials" class="hover:text-accentCyan duration-500">Testimonials</a>
+    <a href="#Pricing" class="hover:text-accentCyan duration-500">Pricing</a>
+    <a href="#contact" class="hover:text-accentCyan duration-500">Contact</a>
+  </div>
+  <!--Hero Section-->
+  <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
+    <!--Hero Container-->
+    <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
+      <img src="images/illustration-intro.png" class="mx-auto" alt="">
+      <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
+        Lorem ipsum, dolor sit consectetur adipisicing elit, Dos santos importante siempre por favor.
+      </h1>
+      <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minus magni enim quas harum nobis excepturi fugit eum commodi dolore illo in iusto voluptatem,
+        dolorum assumenda? Modi delectus commodi voluptates similique!</p>
+      <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">Get Started</button>
+    </div>
+  </section>
+
+  <!--Features Section-->
+  <section id="features" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
+    <!--Features Container-->
+    <div class="container mx-auto px-6 pb-32">
+      <!--First row-->
+      <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
+        <!--Item 1-->
+        <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex items-center justify-center h-24 mb-6">
+            <img src="images/icon-access-anywhere.svg" alt="">
+          </div>
+          <h3 class="text-xl font-bold">Access your file from anywhere</h3>
+          <p class="max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo nisi quidem voluptatibus temporibus
+            accusantium ad autem aperiam minus, vel corrupti dolor in quibusdam quas saepe facere, nemo voluptatem
+            vitae.
+          </p>
+        </div>
+        <!--Item 2-->
+        <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex items-center justify-center h-24 mb-6">
+            <img src="images/icon-security.svg" alt="">
+          </div>
+          <h3 class="text-xl font-bold">Security you can trust</h3>
+          <p class="max-w-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic optio nam voluptatum, praesentium amet
+            sequi debitis, quae velit vitae officia dolorem corrupti? Accusantium asperiores tempore expedita odio ea
+            doloribus.
+          </p>
+        </div>
+      </div>
+      <!--Second row-->
+      <div class="flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0">
+        <!--Item 1-->
+        <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex items-center justify-center h-24 mb-6">
+            <img src="images/icon-collaboration.svg" alt="">
+          </div>
+          <h3 class="text-xl font-bold">Access your file from anywhere</h3>
+          <p class="max-w-md">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo nisi quidem voluptatibus temporibus
+            accusantium ad autem aperiam minus, vel corrupti dolor in quibusdam quas saepe facere, nemo voluptatem
+            vitae.
+          </p>
+        </div>
+        <!--Item 2-->
+        <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex items-center justify-center h-24 mb-6">
+            <img src="images/icon-any-file.svg" alt="">
+          </div>
+          <h3 class="text-xl font-bold">Security you can trust</h3>
+          <p class="max-w-md">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam hic optio nam voluptatum, praesentium amet
+            sequi debitis, quae velit vitae officia dolorem corrupti? Accusantium asperiores tempore expedita odio ea
+            doloribus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Productive Section-->
+  <section id="productive" class="bg-white dark:bg-darkBlue">
+    <div class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16">
+      <!--Image-->
+      <div class="md:w-1/2">
+        <img src="images/illustration-stay-productive.png" alt="">
+      </div>
+      <div class="flex flex-col items-start md:w-1/2">
+        <div class="flex flex-col space-y-5">
+          <h4 class="max w-md text-xl font-bold md:text-4xl">
+            Stay Healthy, Be Creative.
+          </h4>
+          <p class="text-md md:text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur ipsam ullam. Nisi excepturi ipsam
+            cupiditate repudiandae fuga maiores sed, iure, dolore pariatur, incidunt quam officia! Recusandae iure odit
+            debitis.
+          </p>
+          <p class="text-md md:text-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, magnam! Voluptas porro minus eum
+            nostrum itaque architecto animi, praesentium nesciunt nemo exercitationem dolor aliquid, ipsam neque esse!
+            Soluta, eum omnis!
+          </p>
+        </div>
+
+        <!--Link-->
+        <div class="block mt-4">
+          <a href="#" class="border-b border-accentCyan text-accentCyan">
+            See how Flyo Works
+            <img src="images/icon-arrow.svg" alt="" class="inline">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Testimonials Section-->
+  <section id="testimonials" class="bg-gray-50 dark:bg-darkBlue">
+    <!--Testimonials Container-->
+    <div class="container mx-auto px-6 pt-12 pb-80 md:pb-96">
+      <!--Boxes Container-->
+      <div class="relative flex flex-col w-full space-y-6 md:flex-row md:space-y-0 md:space-x-12">
+        <!--Quotes Image-->
+        <img src="images/bg-quotes.png" alt="" class="absolute left-1 top-2 w-10 md:-top-16 md:w-20">
+        <!--Box 1-->
+        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3">
+          <p class="text-sm leading-5 md:text-lg">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde est tempora quo cumque quia autem omnis quas?
+            Doloribus quam et molestias tempore inventore aspernatur, similique, minus velit pariatur aliquid
+            reiciendis.
+          </p>
+          <!--Customer Info-->
+          <div class="flex space-x-4">
+            <img src="images/profile-1.jpg" alt="" class="w-10 h-10 rounded-full">
+            <div>
+              <h5 class="text-sm-font-semibold">Bilal Güngör</h5>
+              <p class="text-xs font-extralight">Metafizik Uzmanı, Siempre Karanlık Güçler Akademisi</p>
+            </div>
+          </div>
+        </div>
+        <!--Box 2-->
+        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3">
+          <p class="text-sm leading-5 md:text-lg">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde est tempora quo cumque quia autem omnis
+            quas?
+            Doloribus quam et molestias tempore inventore aspernatur, similique, minus velit pariatur aliquid
+            reiciendis.
+          </p>
+          <!--Customer Info-->
+          <div class="flex space-x-4">
+            <img src="images/profile-2.jpg" alt="" class="w-10 h-10 rounded-full">
+            <div>
+              <h5 class="text-sm-font-semibold">Yunus Altıntop</h5>
+              <p class="text-xs font-extralight">Garson, Şanzelize Restaurant & Steak House</p>
+            </div>
+          </div>
+        </div>
+        <!--Box 3-->
+        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 dark:bg-darkBlue3 md:w-1/3">
+          <p class="text-sm leading-5 md:text-lg">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde est tempora quo cumque quia autem omnis
+            quas?
+            Doloribus quam et molestias tempore inventore aspernatur, similique, minus velit pariatur aliquid
+            reiciendis.
+          </p>
+          <!--Customer Info-->
+          <div class="flex space-x-4">
+            <img src="images/profile-3.jpg" alt="" class="w-10 h-10 rounded-full">
+            <div>
+              <h5 class="text-sm-font-semibold">Eyüp Savaş</h5>
+              <p class="text-xs font-extralight">Founder & CEO, Gümüşhaneliler Derneği</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Early Access Section-->
+  <section id="early-access" class="relative px-6 dark:bg-darkBlue2 md:px-0">
+    <div
+      class="relative -top-40 max-w-4xl mx-auto p-10 px-6 space-y-6 text-center rounded-lg bg-gray-200 dark:bg-darkBlue1 md:-px-16">
+      <h5 class="text-2xl font-bold">Ger EarlyAccess Today</h5>
+      <p class="text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat? Architecto hic ratione quia id
+        aliquid cumque pariatur illo porro ea iure eligendi dolore, optio cum animi repellendus neque autem?
+      </p>
+      <!-- Input & Button Container-->
+      <div class="flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+        <div class="w-full md:flex-1">
+          <input type="text" class="w-full text-gray-500 px-10 py-3 rounded-full focus:outline-none"
+            placeholder="mail@example.com">
+        </div>
+        <button class="w-full p-3 px-6 rounded-full bg-accentCyan md:w-56 hover:scale-95">
+          Get started for free
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="bg-darkBlue2 text-white">
+    <div class="container mx-auto px-5 py-10">
+      <!--Flex Container-->
+      <div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
+        <!--Email & Phone-->
+        <div class="mt-10 space-y-6">
+          <div class="flex items-center space-x-3 md:-mt-10">
+            <div class="w-6">
+              <img src="images/icon-phone.svg" alt="" class="scale-10">
+            </div>
+            <div>+123-321-8654</div>
+          </div>
+          <div class="flex items-center space-x-3 md:mt-10">
+            <div class="w-6">
+              <img src="images/icon-email.svg" alt="" class="scale-10">
+            </div>
+            <div>example@gmail.com</div>
+          </div>
+        </div>
+        <!--Menus-->
+        <div class="flex flex-col space-y-10 text-xl md:text-base md:space-x-20 md:space-y-0 md:flex-row">
+          <div class="flex flex-col space-y-3">
+            <a href="">About</a>
+            <a href="">Jobs</a>
+            <a href="">Process</a>
+            <a href="">Blog</a>
+          </div>
+          <div class="flex flex-col space-y-3">
+            <a href="">Contact Us</a>
+            <a href="">Terms</a>
+            <a href="">Privacy</a>
+
+          </div>
+        </div>
+        <!--social-->
+        <div class="flex justify-center pb-10 space-x-3">
+          <div>
+            <a href="">
+              <img src="images/facebook.svg" alt="" class="p-2 bg-darkBlue rounded-full ficon">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/twitter.svg" alt="" class="p-2 bg-darkBlue rounded-full ficon">
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img src="images/instagram.svg" alt="" class="p-2 bg-darkBlue rounded-full ficon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -17,35 +17,50 @@
 
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
   <!--Header-->
-  <header class="header container mx-auto mt-10 px-6 text-center h-40 md:h-20">
-    <div
-      class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10">
-    </div>
-    <div class="flex items-center justify-center space-x-3 md:space-x-10 md:absolute top-12 right-10">
-      <a href="/" class="hover:text-accentCyan duration-500">Home</a>
-      <a href="#features" class="hover:text-accentCyan duration-500">Features</a>
-      <a href="#testimonials" class="hover:text-accentCyan duration-500">Testimonials</a>
-      <a href="#Pricing" class="hover:text-accentCyan duration-500">Pricing</a>
-      <a href="#contact" class="hover:text-accentCyan duration-500">Contact</a>
-      <!--Dark-Light Mode Button-->
-      <label class="dark-mode-checkbox"><input type="checkbox" id="theme-toggle"><span
+  <header class="header container max-w-6xl  mx-auto mt-10 px-6 text-center h-40 md:h-20">
+    <nav class="flex items-center justify-between font-bold">
+      <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-16 w-48 mx-0 md:mx-0 top-10 left-10">
+      </div>
+      <div class="hidden h-10 md:flex md:space-x-8 items-center">
+        <div class="group">
+          <a href="/">Home</a>
+          <div class="link-border"></div>
+        </div>
+        <div class="group">
+          <a href="#features">Features</a>
+          <div class="link-border"></div>
+        </div>
+        <div class="group">
+          <a href="#testimonials">Testimonials</a>
+          <div class="link-border"></div>
+        </div>
+        <div class="group">
+          <a href="#pricing">Pricing</a>
+          <div class="link-border"></div>
+        </div>
+        <div class="group">
+          <a href="#contact">Contact</a>
+          <div class="link-border"></div>
+        </div>
+      </div>
+      <label class="dark-mode-checkbox ml-16 mb-1"><input type="checkbox" id="theme-toggle"><span
           class="theme-changer"></span></label>
-    </div>
-    <div class="md:hidden">
-      <button class="z-40 block hamburger md:hidden focus-outline-none" id="menu-btn" type="button">
-        <span class="hambumger-top"></span>
-        <span class="hambumger-middle"></span>
-        <span class="hambumger-bottom"></span>
+      <button class="z-40 block hamburger md:hidden  focus-outline-none order-1" id="menu-btn"
+        type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
       </button>
-    </div>
+    </nav>
+
   </header>
   <div id="menu"
-    class="absolute top-0 bottom-0 left-0 flex flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
-    <a href="/" class="hover:text-accentCyan duration-500">Home</a>
-    <a href="#features" class="hover:text-accentCyan duration-500">Features</a>
-    <a href="#testimonials" class="hover:text-accentCyan duration-500">Testimonials</a>
-    <a href="#Pricing" class="hover:text-accentCyan duration-500">Pricing</a>
-    <a href="#contact" class="hover:text-accentCyan duration-500">Contact</a>
+    class="absolute top-0 bottom-0 left-0 hidden flex-col self-end md:hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black opacity-70">
+    <a href="/">Home</a>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#Pricing">Pricing</a>
+    <a href="#contact">Contact</a>
   </div>
   <!--Hero Section-->
   <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
@@ -57,11 +72,11 @@
       </h1>
       <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Minus magni enim quas harum nobis excepturi fugit eum commodi dolore illo in iusto voluptatem,
-        dolorum assumenda? Modi delectus commodi voluptates similique!</p>
-      <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">Get Started</button>
+        dolorum assumenda? Modi delectus commodi voluptates similique!
+      </p>
+      <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95 duration-200">Get Started</button>
     </div>
   </section>
-
   <!--Features Section-->
   <section id="features" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
     <!--Features Container-->
@@ -145,18 +160,16 @@
             Soluta, eum omnis!
           </p>
         </div>
-
         <!--Link-->
-        <div class="block mt-4">
+        <div class="block mt-4 hover:scale-105 duration-200">
           <a href="#" class="border-b border-accentCyan text-accentCyan">
             See how Flyo Works
-            <img src="images/icon-arrow.svg" alt="" class="inline">
+            <img src="images/icon-arrow.svg" alt="" class="inline w-5">
           </a>
         </div>
       </div>
     </div>
   </section>
-
   <!--Testimonials Section-->
   <section id="testimonials" class="bg-gray-50 dark:bg-darkBlue">
     <!--Testimonials Container-->
@@ -233,7 +246,7 @@
           <input type="text" class="w-full text-gray-500 px-10 py-3 rounded-full focus:outline-none"
             placeholder="mail@example.com">
         </div>
-        <button class="w-full p-3 px-6 rounded-full bg-accentCyan md:w-56 hover:scale-95">
+        <button class="w-full p-3 px-6 rounded-full bg-accentCyan md:w-56 hover:scale-95 duration-200">
           Get started for free
         </button>
       </div>
@@ -271,7 +284,6 @@
             <a href="">Contact Us</a>
             <a href="">Terms</a>
             <a href="">Privacy</a>
-
           </div>
         </div>
         <!--social-->

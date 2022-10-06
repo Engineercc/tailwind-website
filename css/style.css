@@ -633,6 +633,10 @@ a:hover {
   height: 6rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -679,6 +683,10 @@ a:hover {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
 .flex-col {
@@ -874,6 +882,11 @@ a:hover {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-40 {

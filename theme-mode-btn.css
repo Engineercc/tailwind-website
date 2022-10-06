@@ -14,10 +14,10 @@
 .theme-changer:before {
     content: "🌞";
     position: absolute;
-    left: 6px;
-    bottom: 3px;
-    height: 26px;
-    width: 26px;
+    left: 4px;
+    bottom: 0;
+    height: 24px;
+    width: 24px;
     transition: .4s;
 }
 
@@ -34,8 +34,8 @@ input:checked+.theme-changer:before {
 .dark-mode-checkbox {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 32px;
+    width: 56px;
+    height: 24px;
 }
 
 .dark-mode-checkbox input {

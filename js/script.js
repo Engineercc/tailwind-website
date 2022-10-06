@@ -28,3 +28,23 @@ window.addEventListener("load", () => {
     themeToggleIcon.checked = true;
   }
 });
+
+const btn = document.getElementById("menu-btn");
+const mobilMenu = document.getElementById("menu");
+const a = [...btn?.children];
+const navToggle = () => {
+  btn?.classList.toggle("open");
+  mobilMenu?.classList.toggle("flex");
+  mobilMenu?.classList.toggle("hidden");
+  if (mobilMenu?.classList.contains("flex")) {
+    a.forEach((element) => {
+      element.style.backgroundColor = "#fff";
+    });
+  } else {
+    a.forEach((element) => {
+      element.style.removeProperty("background-color");
+    });
+  }
+};
+
+btn?.addEventListener("click", navToggle);

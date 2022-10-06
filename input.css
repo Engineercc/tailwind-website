@@ -6,6 +6,16 @@
   filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg) brightness(105%) contrast(104%);
 }
 
+@layer base {
+  a {
+    @apply hover:text-accentCyan duration-500;
+  }
+}
+
+.link-border {
+  @apply mx-2 group-hover:border-b group-hover:border-accentCyan;
+}
+
 
 .hamburger {
   cursor: pointer;
@@ -23,10 +33,13 @@
   height: 2px;
   top: 0;
   left: 0;
-  background: #fff;
   transform: rotate(0);
   transition: all 0.5s;
+  @apply bg-black;
+  @apply dark:bg-white;
 }
+
+
 
 .hamburger-middle {
   transform: translateY(7px);

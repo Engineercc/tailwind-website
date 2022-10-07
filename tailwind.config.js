@@ -17,8 +17,8 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: (theme) => ({
-        "logo-dark-mode": "url('../images/logo-dark-mode.svg')",
-        "logo-light-mode": "url('../images/logo-light-mode.svg')",
+        "logo-dark-mode": "url('../images/dimensions.png')",
+        "logo-light-mode": "url('../images/dimensions.png')",
         "curvy-dark-mode": "url('../images/bg-curvy-dark-mode.svg')",
         "curvy-light-mode": "url('../images/bg-curvy-light-mode.svg')",
       }),

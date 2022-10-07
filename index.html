@@ -12,48 +12,56 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="theme-mode-btn.css">
-  <title>Fylo Website</title>
+
+  <title>HighTech Network & Cloud Provider</title>
 </head>
 
 <body class="dark:bg-darkBlue dark:text-white font-opensans">
   <!--Header-->
-  <header class="header container max-w-6xl  mx-auto mt-10 px-6 text-center h-40 md:h-20">
-    <nav class="flex items-center justify-between font-bold">
-      <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-16 w-48 mx-0 md:mx-0 top-10 left-10">
-      </div>
-      <div class="hidden h-10 md:flex md:space-x-8 items-center">
-        <div class="group">
-          <a href="/">Home</a>
-          <div class="link-border"></div>
-        </div>
-        <div class="group">
-          <a href="#features">Features</a>
-          <div class="link-border"></div>
-        </div>
-        <div class="group">
-          <a href="#testimonials">Testimonials</a>
-          <div class="link-border"></div>
-        </div>
-        <div class="group">
-          <a href="#pricing">Pricing</a>
-          <div class="link-border"></div>
-        </div>
-        <div class="group">
-          <a href="#contact">Contact</a>
-          <div class="link-border"></div>
-        </div>
-      </div>
-      <label class="dark-mode-checkbox ml-16 mb-1"><input type="checkbox" id="theme-toggle"><span
-          class="theme-changer"></span></label>
-      <button class="z-40 block hamburger md:hidden  focus-outline-none order-1" id="menu-btn"
-        type="button">
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </nav>
+  <div id="header">
+    <header class="header container max-w-6xl  mx-auto mt-10 px-6 text-center h-20 md:h-40">
+      <nav class="flex items-center justify-between font-bold py-2 mr-2">
+        <a href="">
+          <div
+            class="bg-logo-light-mode dark:bg-logo-dark-mode bg-contain bg-no-repeat h-12 md:h-16 w-12 md:w-16 mx-0 md:mx-0 top-10 left-10">
+          </div>
+        </a>
 
-  </header>
+        <div class="hidden h-10 md:flex md:space-x-8 items-center">
+          <div class="group">
+            <a href="/">Home</a>
+            <div class="link-border"></div>
+          </div>
+          <div class="group">
+            <a href="#features">Features</a>
+            <div class="link-border"></div>
+          </div>
+          <div class="group">
+            <a href="#testimonials">Testimonials</a>
+            <div class="link-border"></div>
+          </div>
+          <div class="group">
+            <a href="#pricing">Pricing</a>
+            <div class="link-border"></div>
+          </div>
+          <div class="group">
+            <a href="#contact">Contact</a>
+            <div class="link-border"></div>
+          </div>
+        </div>
+        <label class="dark-mode-checkbox ml-16 mb-1"><input type="checkbox" id="theme-toggle"><span
+            class="theme-changer"></span></label>
+        <button class="z-40 block hamburger md:hidden  focus-outline-none order-1" id="menu-btn" type="button">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </nav>
+
+    </header>
+  </div>
+
+
   <div id="menu"
     class="absolute top-0 bottom-0 left-0 hidden flex-col self-end md:hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black opacity-70">
     <a href="/">Home</a>
@@ -62,6 +70,8 @@
     <a href="#Pricing">Pricing</a>
     <a href="#contact">Contact</a>
   </div>
+
+
   <!--Hero Section-->
   <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom">
     <!--Hero Container-->

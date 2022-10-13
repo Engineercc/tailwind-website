@@ -54,9 +54,17 @@ let sticky = header?.offsetTop;
 
 const stickyHeader = () => {
   if (window.pageYOffset > sticky) {
+    mobilMenu?.classList?.add("sticky");
     header?.classList.add("sticky");
+    a.forEach((element) => {
+      element.style.backgroundColor = "#fff";
+    });
   } else {
+    mobilMenu?.classList?.remove("sticky");
     header?.classList.remove("sticky");
+    a.forEach((element) => {
+      element.style.removeProperty("background-color");
+    });
   }
 };
 

@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 .ficon:hover {
-  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg) brightness(105%) contrast(104%);
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
 }
 
 @layer base {
   a {
     @apply hover:text-accentCyan duration-200;
+  }
+
+  body {
+    @apply selection:bg-cyan-800;
   }
 }
 
@@ -16,6 +21,9 @@
   @apply mx-2 group-hover:border-b group-hover:border-accentCyan;
 }
 
+.border-style {
+  @apply mx-3 mt-3 text-center rounded-tl-3xl rounded-tr-none rounded-br-3xl rounded-bl-none border-8 dark:border-[#dd5594] dark:hover:bg-divGradient  hover:bg-[#a0f0f269]  cursor-pointer border-accentCyan;
+}
 
 .hamburger {
   cursor: pointer;
@@ -38,9 +46,6 @@
   @apply bg-black;
   @apply dark:bg-white;
 }
-
-
-
 
 .hamburger-middle {
   transform: translateY(7px);
@@ -69,8 +74,18 @@
 .sticky {
   position: sticky;
   top: 0;
-  background-color: #000000b0;
+  background-color: #000000db;
   color: #fff;
-  box-shadow:  0px 0px 8px 0px #fff;
-  z-index: 999;
+  box-shadow: 0px 0px 8px 0px #fff;
+}
+
+#menu a {
+  @apply mb-4 last:mb-0;
+}
+
+.text-middle {
+  background: -webkit-linear-gradient(#ffffff, #65e2d9);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }

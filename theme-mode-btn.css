@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #41c0f2;
+    background-color: #66d3d0;
     box-shadow: inset 2px 3px 2px rgb(0 0 0 / 20%), inset -2px -3px 2px hsl(0deg 0% 100% / 10%);
     cursor: pointer;
     border-radius: 34px;
@@ -13,6 +13,7 @@
 
 .theme-changer:before {
     content: "🌞";
+    content: url('images/world.svg');
     position: absolute;
     left: 4px;
     bottom: 0;
@@ -24,6 +25,7 @@
 input:checked+.theme-changer:before {
     transform: translatex(25px);
     content: "🌙";
+    content: url('images/moon-svgrepo-com.svg');
 }
 
 .section-theme {

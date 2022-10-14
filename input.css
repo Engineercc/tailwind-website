@@ -22,8 +22,9 @@
 }
 
 .border-style {
-  @apply mx-3 mt-3 text-center rounded-tl-3xl rounded-tr-none rounded-br-3xl rounded-bl-none border-8 dark:border-[#dd5594] dark:hover:bg-divGradient  hover:bg-[#a0f0f269]  cursor-pointer border-accentCyan;
+  @apply mx-3 mt-3 text-center rounded-tl-[100px] rounded-tr-none rounded-br-[100px] rounded-bl-none border-4 dark:border-[#dd5594] dark:hover:bg-divGradient hover:bg-[#a0f0f269] cursor-pointer border-accentCyan hover:shadow-[0_0_20px_0_#000] dark:hover:shadow-[0_0_20px_0_#fff] duration-200 hover:scale-110 hover:rounded-tr-[100px] hover:rounded-tl-none hover:rounded-bl-[100px] hover:rounded-br-none;
 }
+
 
 .hamburger {
   cursor: pointer;
@@ -79,13 +80,50 @@
   box-shadow: 0px 0px 8px 0px #fff;
 }
 
-#menu a {
-  @apply mb-4 last:mb-0;
+.my-pulse {
+  animation: pulse-cpu 1.5s infinite linear;
 }
 
 .text-middle {
-  background: -webkit-linear-gradient(#ffffff, #65e2d9);
+      background: -webkit-linear-gradient(#65fbff, #000000);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
+}
+
+
+.letter-platinium {
+  font-weight: bold;
+  animation: spacing 8s infinite;
+  background-image: linear-gradient(135deg, #65faff77 10%, transparent 0, transparent 50%, #65faff77 0, #65faff77 60%, transparent 0, transparent);
+  background-size: 7.07px 7.07px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+@keyframes pulse-cpu {
+  0% {
+
+    box-shadow: 0 0 0 0 hsl(176, 68%, 64%);
+    border-radius: 50%;
+  }
+
+  70% {
+
+    box-shadow: 0 0 0 10px hsla(176, 68%, 64%, 0);
+    border-radius: 50%;
+  }
+
+  100% {
+
+    box-shadow: 0 0 0 20px hsla(176, 68%, 64%, 0);
+    border-radius: 50%;
+  }
+}
+
+@keyframes spacing {
+  50% {
+    letter-spacing: 4px;
+  }
+  
 }

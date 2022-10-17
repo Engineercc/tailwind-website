@@ -18,15 +18,16 @@ themeToggleIcon?.addEventListener("click", () => {
   } else {
     document.documentElement.classList.remove("dark");
     localStorage.setItem("color-theme", "light");
-    localStorage.setItem("themeChecked", themeToggleIcon.checked);
+    localStorage.setItem("themeChecked", !themeToggleIcon.checked);
   }
 });
 
 window.addEventListener("load", () => {
-  if (localStorage.getItem("themeChecked") == "true") {
+  if (localStorage.getItem("themeChecked")) {
     document.documentElement.classList.add("dark");
     themeToggleIcon.checked = true;
   }
+
 });
 
 const btn = document.getElementById("menu-btn");

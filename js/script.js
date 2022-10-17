@@ -10,6 +10,7 @@ if (
   console.log(themeToggleIcon.checked);
 } else {
   document.documentElement.classList.remove("dark");
+  themeToggleIcon.checked = false;
 }
 
 
@@ -27,7 +28,7 @@ themeToggleIcon?.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-  if (localStorage.getItem("themeChecked")) {
+  if (localStorage.getItem("themeChecked") === true) {
     document.documentElement.classList.add("dark");
     themeToggleIcon.checked = true;
   }

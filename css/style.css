@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Raleway, sans-serif;
+  font-family: Mulish, sans-serif;
   /* 4 */
 }
 
@@ -603,6 +603,11 @@ body::selection {
   margin-bottom: 1rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -653,6 +658,14 @@ body::selection {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -855,6 +868,14 @@ body::selection {
   border-radius: 0.375rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-\[8\.5rem\] {
+  border-radius: 8.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -998,6 +1019,11 @@ body::selection {
   padding-bottom: 2.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pt-40 {
   padding-top: 10rem;
 }
@@ -1038,12 +1064,20 @@ body::selection {
   padding-bottom: 2.5rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.font-opensans {
-  font-family: Open Sans, sans-serif;
+.font-roboto {
+  font-family: Roboto, sans-serif;
 }
 
 .text-lg {
@@ -1338,6 +1372,18 @@ body::selection {
   letter-spacing: 3px;
 }
 
+.dark .dark\:rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.dark .dark\:rounded-bl-\[16\%\] {
+  border-bottom-left-radius: 16%;
+}
+
+.dark .dark\:rounded-br-\[16\%\] {
+  border-bottom-right-radius: 16%;
+}
+
 .dark .dark\:border-none {
   border-style: none;
 }
@@ -1463,6 +1509,14 @@ body::selection {
     margin-top: -2.5rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1553,12 +1607,25 @@ body::selection {
     padding-right: 0px;
   }
 
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
 
   .md\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .md\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-5xl {
